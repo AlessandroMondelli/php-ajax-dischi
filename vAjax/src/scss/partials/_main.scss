@@ -1,0 +1,48 @@
+main {
+    background-color: $main-background-color;
+    height: $main-height;
+    overflow: hidden;
+
+    .cds-container {
+        @include widthMargin(75vw);
+        @include flex-container(flex,center,center,wrap);
+        padding: $main-padding;
+
+        .card {
+            @include flex-container(flex,flex-start,center,no-wrap);
+            flex-direction: column;
+            flex-basis: 200px;
+            padding: $card-padding;
+            margin: $card-margin;
+            height: $card-height;
+            background: $header-background-color;
+            text-align: center;
+            transition: 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(0.95);
+        }
+
+            .song-img {
+                max-width: $card-max-width-img;
+            }
+
+            .song-title {
+                margin: $card-title-margin;
+                font-size: $card-title-font-size;
+                text-transform: uppercase;
+                color: $main-font-color;
+            }
+
+            .author {
+                color: $second-font-color;
+                font-size: calc((#{$card-title-font-size}) - 2px);
+            }
+
+            .year {
+                color: $second-font-color;
+            }
+        }
+    }
+}

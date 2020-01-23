@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 98%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background: #2e3a46;
+}
+
+header #logo img {
+  height: 50px;
+  margin-top: 10px;
+}
+
+#gen-sel {
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  font-size: 15px;
+  background-color: #2e3a46;
+  color: white;
+}
+
+main {
+  background-color: #1E2D3B;
+  height: calc((100vh - 70px) - 50px);
+  overflow: hidden;
+}
+
+main .cds-container {
+  width: 75vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-wrap: wrap;
+  padding: 35px 0;
+}
+
+main .cds-container .card {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-wrap: no-wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-basis: 200px;
+  padding: 20px;
+  margin: 15px 20px;
+  height: 360px;
+  background: #2e3a46;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .cds-container .card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+main .cds-container .card .song-img {
+  max-width: 100%;
+}
+
+main .cds-container .card .song-title {
+  margin: 20px 0;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+}
+
+main .cds-container .card .author {
+  color: grey;
+  font-size: calc((22px) - 2px);
+}
+
+main .cds-container .card .year {
+  color: grey;
+}
+
