@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Music Selection Php</title>
+        <title>Music Selection Php-Ajax</title>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="public/app.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
