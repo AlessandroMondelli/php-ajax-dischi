@@ -1,0 +1,10 @@
+main {
+    background-color: $main-background-color;
+    height: $main-height;
+
+    .cds-container {
+        @include widthMargin(75vw);
+        @include flex-container(flex,center,center,wrap);
+        padding: $main-padding;
+    }
+}

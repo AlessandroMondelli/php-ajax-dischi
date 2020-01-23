@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 98%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background: #2e3a46;
+}
+
+header #logo img {
+  height: 50px;
+  margin-top: 10px;
+}
+
+#gen-sel {
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  font-size: 15px;
+  background-color: #2e3a46;
+  color: white;
+}
+
+main {
+  background-color: #1E2D3B;
+  height: calc((100vh - 70px) - 50px);
+}
+
+main .cds-container {
+  width: 75vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-wrap: wrap;
+  padding: 35px 0;
+}
+

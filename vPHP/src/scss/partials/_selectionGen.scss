@@ -1,0 +1,7 @@
+#gen-sel {
+    @include widthMargin(100%);
+    height: $sel-height;
+    font-size: $sel-font-size;
+    background-color: $header-background-color;
+    color: $main-font-color;
+}

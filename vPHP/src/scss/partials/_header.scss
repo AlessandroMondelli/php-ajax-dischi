@@ -1,0 +1,11 @@
+header {
+    width: 100%;
+    height: 70px;
+    background: $header-background-color;
+
+    #logo {
+        img {
+            @include headerLogoSizeMargin(50px,10px);
+        }
+    }
+}

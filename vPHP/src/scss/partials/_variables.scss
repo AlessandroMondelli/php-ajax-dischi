@@ -1,0 +1,10 @@
+$header-background-color: rgb(46, 58, 70);
+$header-height: 70px;
+$main-font-color: white;
+
+$sel-height: $header-height - 20px;
+$sel-font-size: 15px;
+
+$main-background-color: #1E2D3B;
+$main-height: calc((100vh - #{$header-height}) - #{$sel-height});
+$main-padding: 35px 0;

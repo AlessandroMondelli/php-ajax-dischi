@@ -1,0 +1,16 @@
+@mixin headerLogoSizeMargin($height,$marginTop) {
+    height: $height;
+    margin-top: $marginTop;
+}
+
+@mixin widthMargin($width) {
+    width: $width;
+    margin: 0 auto;
+}
+
+@mixin flex-container($display,$justify,$align,$wrap) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
