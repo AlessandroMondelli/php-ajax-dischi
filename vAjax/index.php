@@ -25,8 +25,7 @@
             </select>
         </section>
         <main>
-            <div class="cds-container">
-            </div>
+            <div class="cds-container"></div>
         </main>
 
         <script id="disc-template" type="text/x-handlebars-template">
