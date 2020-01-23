@@ -1,5 +1,5 @@
 <?php
-@include 'dischi.php';
+@include 'dischi.php'; //Includo file con funzione per decodificare file JSON
 $url_api = "https://flynn.boolean.careers/exercises/api/array/music"; //Url API
  ?>
 
@@ -31,23 +31,16 @@ $url_api = "https://flynn.boolean.careers/exercises/api/array/music"; //Url API
             <div class="cds-container">
             <?php
                 $discs_array = decodeJSON($url_api); //Richiamo funzione che fa decode JSON
-                foreach ($discs_array as $verifica => $value) {
-                    foreach ($value as $key => $disc) {
-                        foreach ($disc as $disc_infos) {
-
+                foreach ($discs_array as $verifica => $value) { //Scorro array dati
+                    foreach ($value as $key => $disc) { //cerco info dischi
                 ?>
-                <pre>
-                    <?php var_dump($disc_infos) ?>
-                </pre>
                 <div class="card">
-                    <img class="song-img" src="<?php $disc_infos["poster"] ?>" alt="copertina canzone">
-                    <p class="song-title"><?php $disc_infos["title"] ?></p>
-                    <small class="author"><?php $disc_infos["author"] ?></small>
-                    <small class="year"><?php $disc_infos["year"] ?></small>
+                    <img class="song-img" src="<?php echo $disc["poster"] ?>" alt="copertina canzone">
+                    <p class="song-title"><?php echo $disc["title"] ?></p>
+                    <small class="author"><?php echo $disc["author"] ?></small>
+                    <small class="year"><?php echo $disc["year"] ?></small>
                 </div>
                 <?php
-                        }
-
                     }
                 }
              ?>
