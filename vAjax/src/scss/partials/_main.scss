@@ -1,7 +1,7 @@
 main {
     background-color: $main-background-color;
     height: $main-height;
-    overflow: hidden;
+    overflow-x: auto;
 
     .cds-container {
         @include widthMargin(75vw);

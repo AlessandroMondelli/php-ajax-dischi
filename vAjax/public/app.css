@@ -34,7 +34,7 @@ header #logo img {
 main {
   background-color: #1E2D3B;
   height: calc((100vh - 70px) - 50px);
-  overflow: hidden;
+  overflow-x: auto;
 }
 
 main .cds-container {

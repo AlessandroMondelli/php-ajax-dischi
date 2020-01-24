@@ -17,11 +17,7 @@
         </header>
         <section>
             <select id="gen-sel" >
-                <option value="sel">Seleziona un genere</option>
-                <option value="pop">Pop</option>
-                <option value="rock">Rock</option>
-                <option value="jazz">Jazz</option>
-                <option value="metal">Metal</option>
+                <option value="">Seleziona un Genere</option>
             </select>
         </section>
         <main>
